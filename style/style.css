@@ -8,13 +8,30 @@
 
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   font-size: 15px;
   font-family: Red Hat Text, sans-serif;
+  background: #191a24;
+  position: relative;
+}
+
+body .hills {
+  height: 20%;
+}
+
+body .stars {
+  height: 80%;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,12 +15,26 @@ $almost-black: hsl(234, 17%, 12%);
 
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     font-size: 15px;
     font-family: Red Hat Text, sans-serif;
+    background: $almost-black;
+    position: relative;
+
+    .hills {
+        height: 20%;
+    }
+
+    .stars {
+        height: 80%;
+    }
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    user-select: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
