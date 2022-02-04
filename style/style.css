@@ -34,4 +34,124 @@ img {
   left: 0;
   z-index: -1;
 }
+
+h1 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+main .title_time_container {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main .socials {
+  margin-top: auto;
+}
+
+main .socials ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .socials ul svg {
+  fill: #8385a9;
+}
+
+main .time_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .time_container .container p {
+  -webkit-box-shadow: 0 10px 5px -5px #181717;
+          box-shadow: 0 10px 5px -5px #181717;
+  border-radius: .5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #fb6087;
+  font-size: 1.75rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #343650;
+}
+
+main .time_container .container span {
+  font-size: .5rem;
+  color: #8486a9;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .socials ul {
+    gap: 2rem;
+  }
+  main .socials ul svg:hover {
+    fill: #fb6087;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  main .time_container {
+    gap: 1.5rem;
+  }
+  main .time_container .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  main .time_container .container p {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 10rem;
+    height: 10rem;
+    font-size: 5rem;
+  }
+  main .time_container .container span {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
